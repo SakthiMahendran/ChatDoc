@@ -1,11 +1,30 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>My Flask App</title>
-  </head>
-  <body>
-    <h1>Hello, World!</h1>
-    <p>Welcome to my Flask app.</p>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Web App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <nav id="navbar">
+            <div id="logo">Chat Doc</div>
+            <div id="nav-links">
+                <a href="#" id="login-link">Login</a>
+                <a href="#" id="signup-link">Sign Up</a>
+            </div>
+        </nav>
+        <div id="chat-container">
+            <div id="messages"></div>
+        </div>
+        <div id="input-container">
+            <input type="file" id="file-input" accept=".pdf,.csv,.xls" style="display: none;">
+            <button id="upload-button">Upload File</button>
+            <input type="text" id="user-input" placeholder="Type your message here...">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
